@@ -12,6 +12,8 @@
 		8375751A1E8776EF00331AE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837575181E8776EF00331AE5 /* Main.storyboard */; };
 		8375751C1E8776EF00331AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8375751B1E8776EF00331AE5 /* Assets.xcassets */; };
 		8375751F1E8776EF00331AE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8375751D1E8776EF00331AE5 /* LaunchScreen.storyboard */; };
+		837575271E87786D00331AE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 837575261E87786D00331AE5 /* GoogleService-Info.plist */; };
+		F6725DF594F1CF515B37529A /* Pods_Chatsnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF433B0EF06C7B1B2846EE81 /* Pods_Chatsnap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		8375751B1E8776EF00331AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8375751E1E8776EF00331AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837575201E8776EF00331AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837575261E87786D00331AE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84DED2A01CF81A036CB68BC6 /* Pods-Chatsnap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatsnap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatsnap/Pods-Chatsnap.release.xcconfig"; sourceTree = "<group>"; };
+		A989E338F8CA6DF25D09D786 /* Pods-Chatsnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatsnap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatsnap/Pods-Chatsnap.debug.xcconfig"; sourceTree = "<group>"; };
+		AF433B0EF06C7B1B2846EE81 /* Pods_Chatsnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatsnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6725DF594F1CF515B37529A /* Pods_Chatsnap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3292A0474B761B180D9DCAF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF433B0EF06C7B1B2846EE81 /* Pods_Chatsnap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		837575081E8776EF00331AE5 = {
 			isa = PBXGroup;
 			children = (
 				837575131E8776EF00331AE5 /* Chatsnap */,
 				837575121E8776EF00331AE5 /* Products */,
+				E5C1A096F5A15D54BF2E520A /* Pods */,
+				3292A0474B761B180D9DCAF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +75,20 @@
 				837575161E8776EF00331AE5 /* ViewController.swift */,
 				837575181E8776EF00331AE5 /* Main.storyboard */,
 				8375751B1E8776EF00331AE5 /* Assets.xcassets */,
+				837575261E87786D00331AE5 /* GoogleService-Info.plist */,
 				8375751D1E8776EF00331AE5 /* LaunchScreen.storyboard */,
 				837575201E8776EF00331AE5 /* Info.plist */,
 			);
 			path = Chatsnap;
+			sourceTree = "<group>";
+		};
+		E5C1A096F5A15D54BF2E520A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A989E338F8CA6DF25D09D786 /* Pods-Chatsnap.debug.xcconfig */,
+				84DED2A01CF81A036CB68BC6 /* Pods-Chatsnap.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837575231E8776EF00331AE5 /* Build configuration list for PBXNativeTarget "Chatsnap" */;
 			buildPhases = (
+				9111CBB564EFFF4647E1F415 /* [CP] Check Pods Manifest.lock */,
 				8375750D1E8776EF00331AE5 /* Sources */,
 				8375750E1E8776EF00331AE5 /* Frameworks */,
 				8375750F1E8776EF00331AE5 /* Resources */,
+				4E3F7EFB06A1EB8E6FE4336C /* [CP] Embed Pods Frameworks */,
+				61B7AC3323ECD1656D83A4E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				8375751F1E8776EF00331AE5 /* LaunchScreen.storyboard in Resources */,
+				837575271E87786D00331AE5 /* GoogleService-Info.plist in Resources */,
 				8375751C1E8776EF00331AE5 /* Assets.xcassets in Resources */,
 				8375751A1E8776EF00331AE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E3F7EFB06A1EB8E6FE4336C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatsnap/Pods-Chatsnap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61B7AC3323ECD1656D83A4E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatsnap/Pods-Chatsnap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9111CBB564EFFF4647E1F415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8375750D1E8776EF00331AE5 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		837575241E8776EF00331AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A989E338F8CA6DF25D09D786 /* Pods-Chatsnap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A47892JV82;
@@ -272,6 +352,7 @@
 		};
 		837575251E8776EF00331AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DED2A01CF81A036CB68BC6 /* Pods-Chatsnap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A47892JV82;
