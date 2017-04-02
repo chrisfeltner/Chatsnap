@@ -8,5 +8,8 @@ target 'Chatsnap' do
   # Pods for Chatsnap
 
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 
 end
