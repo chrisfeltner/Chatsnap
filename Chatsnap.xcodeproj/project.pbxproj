@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83180E441EBC3C11004757C8 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83180E431EBC3C11004757C8 /* SelectUserViewController.swift */; };
 		837575151E8776EF00331AE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837575141E8776EF00331AE5 /* AppDelegate.swift */; };
 		837575171E8776EF00331AE5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837575161E8776EF00331AE5 /* SignInViewController.swift */; };
 		8375751A1E8776EF00331AE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837575181E8776EF00331AE5 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83180E431EBC3C11004757C8 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		837575111E8776EF00331AE5 /* Chatsnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatsnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837575141E8776EF00331AE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837575161E8776EF00331AE5 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				837575141E8776EF00331AE5 /* AppDelegate.swift */,
 				837575161E8776EF00331AE5 /* SignInViewController.swift */,
 				837575181E8776EF00331AE5 /* Main.storyboard */,
+				83180E431EBC3C11004757C8 /* SelectUserViewController.swift */,
 				83F8D02F1E90392A00FF1CBC /* PictureViewController.swift */,
 				83F8D02D1E90365E00FF1CBC /* SnapsViewController.swift */,
 				8375751B1E8776EF00331AE5 /* Assets.xcassets */,
@@ -224,6 +227,7 @@
 			files = (
 				837575171E8776EF00331AE5 /* SignInViewController.swift in Sources */,
 				83F8D0301E90392A00FF1CBC /* PictureViewController.swift in Sources */,
+				83180E441EBC3C11004757C8 /* SelectUserViewController.swift in Sources */,
 				837575151E8776EF00331AE5 /* AppDelegate.swift in Sources */,
 				83F8D02E1E90365E00FF1CBC /* SnapsViewController.swift in Sources */,
 			);

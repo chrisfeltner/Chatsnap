@@ -17,6 +17,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        FIRDatabase.database().reference().child("hello").setValue("uploaded")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -35,6 +36,7 @@ class SignInViewController: UIViewController {
                     else
                     {
                         print("user created")
+     
                         self.performSegue(withIdentifier: "signInSegue", sender: nil)
                     }
                 })
